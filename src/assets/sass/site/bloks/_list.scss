@@ -1,0 +1,57 @@
+.list {
+    counter-reset: item;
+    max-width: 1200px;
+    &__item {
+        list-style-type: none;
+        font-size: calc(var(--vw) * 14 + 10px);
+        line-height: calc(var(--vw) * 15 + 18px);
+        font-weight: 600;
+        color: var(--grayscale50);
+        width: 100%;
+        // max-width: 1300px;
+        padding-bottom: calc(var(--vw) * 35);
+        &::before {
+            content: counter(item, decimal-leading-zero) " ";
+            counter-increment: item;
+            margin-right: calc(var(--vw) * 40);
+            @media (min-width: 1440px) {
+                margin-right: 40px;
+            }
+        }
+        @media (min-width: 1440px) {
+            font-size: 24px;
+            line-height: 33px;
+            padding-bottom: 35px;
+        }
+    }
+    &__link {
+        font-size: calc(var(--vw) * 14 + 10px);
+        line-height: calc(var(--vw) * 15 + 18px);
+        @media (min-width: 1440px) {
+            font-size: 24px;
+            line-height: 33px;
+        }
+        &::before {
+            content: "\e8c0";
+            font-family: eicons;
+            float: right;
+        }
+    }
+    &__title {
+        display: inline-block;
+    }
+    &__text {
+        color: var(--grayscale50);
+        margin-top: calc(var(--vw) * 24);
+        margin-left: calc(var(--vw) * 70);
+        width: 470px;
+        @media (min-width: 1440px) {
+            margin-left: 70px;
+            margin-top: 24px;
+            width: 40%;
+        }
+        @media (max-width: 690px) {
+            width: 80%;
+        }
+    }
+}

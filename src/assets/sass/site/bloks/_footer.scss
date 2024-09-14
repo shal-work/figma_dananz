@@ -1,0 +1,185 @@
+.footer {
+    &__title {
+        font-size: calc(var(--vw) * 26 + 10px);
+        font-weight: 600;
+        line-height: calc(var(--vw) * 45 + 16px);
+        @media (min-width: 1440px) {
+            font-size: 36px;
+            line-height: 61px;
+        }
+        &_light {
+            color: var(--white);
+            @media (max-width: 400px) {
+                text-align: justify;
+            }
+        }
+    }
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-blue100);
+    padding: calc(var(--vw) * 40) calc(var(--vw) * 120);
+    gap: calc(var(--vw) * 155);
+    @media (min-width: 1440px) {
+        padding: 40px 120px;
+        gap: 155px;
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__item {
+        display: block;
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: var(--lightray);
+        margin-bottom: 20px;
+        @media (max-width: 600px) {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+    }
+}
+.footer-bottom {
+    display: flex;
+    gap: calc(var(--vw) * 279);
+    padding: calc(var(--vw) * 80) calc(var(--vw) * 120);
+    @media (min-width: 1440px) {
+        padding: 80px 120px;
+        gap: 279px;
+    }
+    @media (max-width: 1200px) {
+        gap: 40px;
+    }
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        display: block;
+        width: 50%;
+        @media (max-width: 900px) {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__links {
+        float: right;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--grayscale70);
+        justify-content: space-between;
+        @media (max-width: 320px) {
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+    }
+    &__vector::after {
+        content: url(./assets/img/Vector.svg);
+    }
+
+}
+
+.footer-form {
+    &__control {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    &__label {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        white-space: nowrap;
+        @media (max-width: 600px) {
+            font-size: 14px;
+            white-space: normal;
+        }
+    }
+    &__label::before {
+        content: "\e914";
+        font-family: eicons;
+        font-size: 14px;
+        padding-right: 10px;
+        @media (max-width: 600px) {
+            font-size: 10px;
+        }
+    }
+    &__input {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: var(--grayscale30);
+        border: none;
+        margin-bottom: 15px;
+        padding: 10px;
+        outline: 0;
+        @media (max-width: 320px) {
+            border:1px solid var(--primary-blue90);
+            padding: 4px;
+        }
+    }
+    &__input::placeholder {
+        color: var(--lightray);
+    }
+    &__input:focus {
+        outline: 0;
+        box-shadow: 0px 0px 5px var(--primary-blue90);
+        border-radius: 4px;
+    }
+}
+.footer-list {
+    &__links {
+        display: flex;
+        gap: 20px;
+        position: relative;
+    }
+    &__text {
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    &__link-icon {
+        display: flex;
+        list-style: none;
+        border-radius: 50%;
+        background-color: var(--lightray);
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+    }
+}
+.icon {
+    &__item {
+        height: 20px;
+        width: 20px;
+        fill: var(--grayscale70);
+    }
+}
+.zoom-hover {
+    transform: scale(1);
+    transition: transform .3s, fill .3s;
+    cursor: pointer;
+    &:hover {
+        fill: var(--primary);
+        transform: scale(1.2);
+    }
+}

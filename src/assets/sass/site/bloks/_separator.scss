@@ -1,0 +1,28 @@
+.separator {
+    width: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    @media (max-width: 576px) {
+        margin-bottom: 5px;
+    }
+    &__title {
+        display: inline-block;
+        margin-right: 14px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: var(--grayscale);
+        @media (max-width: 576px) {
+            font-size: calc(var(--vw) * 4 + 12px);
+        }
+    }
+    &__line {
+        display: inline-block;
+        width: 38.2vw;
+        margin: 5px auto;
+        border: 1px solid var(--grayscale);
+        @media (min-width: 1440px) {
+            width: 529px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.home-design {
+    position: relative;
+    margin-bottom: 160px;
+    @media (max-width: 576px) {
+        margin-bottom: 40px;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        position: relative;
+        margin-bottom: calc(var(--vw)*46);
+        @media (min-width: 1440px) {
+            margin-bottom: 46px;
+        }
+    }
+    &__title {
+        font-size: calc(var(--vw) * 72);
+        line-height: calc(var(--vw) * 100);
+        font-weight: 700;
+        color: var(--grayscale);
+        @media (min-width: 1440px) {
+            font-size: 72px;
+            line-height: 100px;
+        }
+    }
+    &__text {
+        font-size: calc(var(--vw)*18);
+        font-weight: 500;
+        line-height: calc(var(--vw)*27);
+        transform: rotate(-90deg);
+        bottom: calc(var(--vw)*62);
+        right: calc(var(--vw)* -62);
+        position: absolute;
+        @media (min-width: 1440px) {
+            font-size: 18px;
+            line-height: 27px;
+            bottom: 62px;
+            right: -62px;
+        }
+    }
+    &__img {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    &__advantage {
+        position: absolute;
+        top: calc(var(--vw)*135);
+        right: calc(var(--vw)*142);
+        right: calc(var(--vw)*142);
+        @media (min-width: 1440px) {
+            top: 135px;
+            right: 142px;
+        }
+    }
+}
+.hr-line {
+    width: 50%;
+    border: 1px solid var(--grayscale);
+    position: relative;
+    float: right;
+    top: calc(var(--vw)*45);
+    @media (min-width: 1440px) {
+        top: 45px;
+    }
+}

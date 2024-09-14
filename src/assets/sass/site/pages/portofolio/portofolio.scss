@@ -1,0 +1,21 @@
+.portofolio {
+    &__separator {
+        margin-bottom: 50px;
+    }
+    &__block {
+        margin-bottom: 40px;
+    }
+    &__reverse {
+        flex-direction: row-reverse;
+        @media (max-width: 1200px) {
+            flex-direction: column;
+        }
+    }
+    &__reverse-leiba {
+        left: -185px;
+        @media (max-width: 1200px) {
+            left: auto;
+            right: 0;
+        }
+    }
+}

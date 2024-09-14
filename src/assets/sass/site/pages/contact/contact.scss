@@ -1,0 +1,121 @@
+.contact {
+    &__form {
+        margin: 0 180px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media (max-width: 960px) {
+            margin: 0 50px 100px;
+        }
+        @media (max-width: 640px) {
+            margin: 0 0 50px;
+        }
+    }
+    &__row {
+        display: flex;
+        gap: 20px;
+        @media (max-width: 640px) {
+            flex-direction: column;
+        }
+    }
+    &__columm {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        width: 30%;
+        gap: 40px;
+        @media (max-width: 640px) {
+            width: 100%;
+            gap: 20px;
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+        max-width: 168px;
+    }
+    &__title {
+        margin-bottom: 24px;
+        @media (max-width: 640px) {
+            margin-bottom: 5px;
+        }
+    }
+    &__text {
+        color: var(--grayscale10);
+    }
+}
+.form {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        @media (max-width: 960px) {
+            flex-direction: column;
+        }
+    }
+    &__control {
+        width: 100%;
+    }
+    &__label {
+        display: block;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+        color: var(--grayscale50);
+        margin-bottom: 10px;
+    }
+    &__input {
+        color: var(--grayscale20);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        background-color: var(--white);
+        border: 1px solid var(--grayscale10);
+        border-radius: 4px;
+        padding: 17px 32px;
+        // height: 100%;
+        width: 100%;
+        outline: 0;
+        cursor: pointer;
+        &_phone {
+            padding-left: 104px;
+        }
+    }
+    &__input::placeholder {
+        color: var(--lightray);
+    }
+    &__input:focus {
+        outline: none;
+        box-shadow: 0px 0px 10px var(--primary-blue50);
+        border-radius: 4px;
+    }
+    &__phone {
+        position: relative;
+    }
+    &__nationality {
+        position: absolute;
+        bottom: 18px;
+        left: 21px;
+        border: none;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+    }
+    &__nationality:focus {
+        outline: none;
+        box-shadow: 0px 0px 10px var(--primary-blue50);
+    }
+    &__nationality:focus-visible {
+        outline: none;
+        box-shadow: 0px 0px 10px var(--primary-blue50);
+    }
+    &__option {
+        font-size: 14px;
+        line-height: 27px;
+        font-weight: 500;
+        color: var(--grayscale);
+        padding: 0;
+
+    }
+
+
+}

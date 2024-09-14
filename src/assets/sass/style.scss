@@ -1,0 +1,33 @@
+@import './general/gi';
+@import './components/ui';
+@import './helpers/classes';
+@import 'main';
+
+@import 'site/bloks/header';
+@import 'site/bloks/footer';
+@import 'site/bloks/separator';
+@import 'site/bloks/head-block';
+@import 'site/bloks/product-block';
+@import 'site/bloks/list';
+@import 'site/bloks/service-item';
+@import 'site/bloks/portofolio-leiba';
+@import 'site/bloks/animate';
+
+@import 'site/pages/home/home';
+@import 'site/pages/about/about';
+@import 'site/pages/servicespage/services';
+@import 'site/pages/teams/teams';
+@import 'site/pages/contact/contact';
+@import 'site/pages/portofolio/portofolio';
+@import 'site/pages/details/details';
+
+
+.fadeOut {
+    opacity: 0;
+}
+.fadeIn {
+    opacity: 1;
+}
+input[type=radio] {
+    display: none;
+}

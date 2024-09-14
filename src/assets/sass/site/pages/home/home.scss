@@ -1,0 +1,51 @@
+.advantage {
+    background-color: var(--primary-blue100);
+     &__project {
+        display: flex;
+        text-align: center;
+        padding: calc(var(--vw)*25) calc(var(--vw)*48);
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        @media (min-width: 1440px) {
+            padding: 25px 48px;
+        }
+    }
+    &__block {
+        margin-bottom: calc(var(--vw)*50);
+        @media (min-width: 1440px) {
+            margin-bottom: 50px;
+        }
+    }
+    &__total {
+        font-size: calc(var(--vw)*52);
+        line-height: calc(var(--vw)*83);
+        font-weight: 400;
+        color: var(--white);
+        @media (min-width: 1440px) {
+            font-size: 52px;
+            line-height: 83px;
+        }
+    }
+    &__total::after {
+        content: '+';
+        color: var(--white);
+    }
+    &__text {
+        font-size: calc(var(--vw)*16);
+        line-height: calc(var(--vw)*25);
+        font-weight: 400;
+        color: var(--white);
+        @media (min-width: 1440px) {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
+
+
+
+@import './home_design';
+@import './home_about';
+@import './home_service';
+@import './home_material';

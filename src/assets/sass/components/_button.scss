@@ -1,0 +1,38 @@
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.2s;
+
+    border-radius: 0px;
+    padding: 13px 31px;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 142px;
+    &-primary {
+        border: 1px solid var(--primary-blue100);
+        background-color: var(--primary-blue100);
+        border-radius: 0px;
+        &:hover {
+            background-color: var(--primary);
+            border: 1px solid var(--primary);
+            color: var(--white);
+        }
+    }
+    &-white {
+        border: 1px solid var(--grayscale30);
+        background-color: var(--white);
+        color: var(--grayscale50);
+        border-radius: 0px;
+        &:hover {
+            background-color: var(--primary);
+            border: 1px solid var(--primary);
+            color: var(--white);
+        }
+    }
+}

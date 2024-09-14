@@ -1,0 +1,63 @@
+.home-servise {
+    margin-bottom: calc(var(--vw) * 160);
+    height: 780px;
+    position: relative;
+    @media (min-width: 1440px) {
+        margin-bottom: 160px;
+        height: 780px;
+    }
+    @media (max-width: 1440px) {
+        height: calc(var(--vw) * 780);
+    }
+    @media (max-width: 960px) {
+        height: auto;
+    }
+    &__content {
+        background-color: var(--white);
+        width: 77%;
+        position: relative;
+        z-index: 10;
+        padding-right: 40px;
+        @media (max-width: 1200px) {
+            padding: 0 calc(var(--vw) * 40);
+        }
+        @media (max-width: 960px) {
+            width: 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 24px;
+    }
+    &__text {
+        margin-bottom: 24px;
+        color: var(--grayscale10);
+        width: 52%;
+        @media (max-width: 1200px) {
+            width: 80%;
+            margin-bottom: 14px;
+        }
+        @media (max-width: 320px) {
+            width: 100%;
+        }
+    }
+    &__img {
+        width: 100%;
+        position: relative;
+        top: -160px;
+        @media (max-width: 960px) {
+            top: 0;
+            margin-top: calc(var(--vw)* 40);
+        }
+    }
+    &__photo {
+        width: 89.82%;
+        float: right;
+        @media (min-width: 1440px) {
+            width: 89.82%; //width: 1076px;
+        }
+        @media (max-width: 960px) {
+            width: 100%;
+            float: none;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.head-block {
+    margin-bottom: calc(var(--vw) * 80 + 20px);
+    @media (min-width: 1440px) {
+        margin-bottom: 100px;
+    }
+    &__img {
+        text-align: center;
+        width: 100%;
+    }
+}

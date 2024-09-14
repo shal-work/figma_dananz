@@ -1,0 +1,28 @@
+// Colors
+// Разница --  и $
+// -- это для css
+//  $ это переменая scss
+
+$primary: #1B70F1;
+$primary20: #1b71f1e0;
+$background: #FFFFFF;
+$white: #FFFFFF;
+
+:root {
+    --background: #FFFFFF;
+    --primary-blue100: #2C3878;
+    --primary-blue90: #566093;
+    --primary-blue75: #8088AE;
+    --primary-blue50: #ABAFC9;
+    --primary-blue25: #D5D7E4;
+    --primary-blue10: #EAEBF2;
+    --grayscale:#000000;
+    --grayscale70:#141414;
+    --grayscale50:#333333;
+    --grayscale30:#3C3C3C;
+    --grayscale10:#9C9C9C;
+    --lightray:#D9D9D9;
+    --white: #FFFFFF;
+
+    --primary: #1B70F1;
+}
