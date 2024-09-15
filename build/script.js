@@ -264,7 +264,6 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.dropdown = function() {
     for (let i = 0; i < this.length; i++) {
         const id = this[i].getAttribute('id'); //вариант урока
         // const id = this[i].getAttribute('id').replace(/(-?(\D+\.\D+)|(\D+))/, ''); //("drop:26.2_d5").replace выдает 26.2_d5
-        console.log(id);
         Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i]).click(() => {
             Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(`[data-toggle-id="${id}"]`).fadeToggle(800);
         });

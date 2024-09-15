@@ -1,17 +1,12 @@
 .home-material {
     display: flex;
     position: relative;
-    // border: 1px solid red;
     @media (max-width: 960px) {
         flex-direction: column;
     }
     &__content {
         width: 48%;
-        padding: calc(var(--vw) * 48) 0;
-        @media (min-width: 1440px) {
-            min-height: 490px;
-            padding: 48px 0;
-        }
+        padding: 45.5px 0;
         @media (max-width: 960px) {
             width: auto;
             padding: 20px 0;
@@ -34,50 +29,40 @@
     }
     &__imgs {
         display: grid;
-        grid-template-areas: "home-material__photo-main home-material__photo-over"
-                             "home-material__photo-main home-material__photo-under";
-
-        grid-template-columns: 57% 43%;
-        column-gap: calc(var(--vw) * 27);
+        grid-template-areas: "area-1 area-2 area-2"
+                             "area-1 area-3 .";
+        gap: calc(var(--vw) * 40);
         @media (max-width: 960px) {
-            // grid-template-areas: "home-material__photo-main home-material__photo-over home-material__photo-under";
-            // grid-template-columns: repeat(3, 1fr);
             width: 100%;
-            row-gap: calc(var(--vw) * 27);
-            // justify-items: end;
+            grid-template-columns: 2fr 1fr 5%;
         }
     }
     &__photo-main {
-        max-width: 341px;
         width: calc(var(--vw) * 341);
-        max-height: 392px;
-        grid-area: home-material__photo-main;
+        grid-area: area-1;
         align-self: end;
-        justify-items:stretch;
-        width: 100%;
+        margin-bottom: -6px;
         @media (max-width: 960px) {
             width: 100%;
-            height: auto;
         }
-
     }
     &__photo-over {
-        max-width: 241px;
-        width: 100%;
-        grid-area: home-material__photo-over;
+        width: calc(var(--vw) * 241);
+        grid-area:  area-2;
+        align-self: end;
+        margin-bottom: -6px;
         @media (max-width: 960px) {
             width: 100%;
-            height: auto;
         }
     }
     &__photo-under {
-        max-width: 195px;
         width: calc(var(--vw) * 195);
-        max-height: 178px;
-        grid-area: home-material__photo-under;
+        grid-area:  area-3;
         @media (max-width: 960px) {
             width: 100%;
-            height: auto;
         }
+    }
+    &__photo {
+        width: 100%;
     }
 }
