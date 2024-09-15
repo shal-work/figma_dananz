@@ -1376,19 +1376,8 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.click = function(handler
 // работа с бургером
 // Добавляем класс active, для замены бургера на крестик (это в css)
 $('.navbar-toggle').on('click', function() {
-    $('.rs-menu-form__burger').toggleClass('active');
+    $('.burger').toggleClass('active');
 });
-
-
-// После клика по пункту меню скрываем адаптивное меню, остается только бургер
-// $('.collapse').on('click', function() {
-//     console.log(333);
-//     if (window.getComputedStyle(document.querySelector('.navbar-toggle')).display != 'none') {
-//         let item= document.querySelectorAll('.collapse');
-//         item.forEach((item) => item.style.display = 'none');
-//         $('.rs-menu-form__burger').toggleClass('active');
-//     }
-// });
 
 
 let isClick = true;

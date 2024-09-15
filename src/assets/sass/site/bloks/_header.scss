@@ -89,29 +89,29 @@
 .navbar-toggle .icon-bar + .icon-bar {
     margin-top: 4px;
 }
-.rs-menu-form__burger span:nth-child(1) {
+.burger span:nth-child(1) {
     transform: rotate(0deg) translate(0);
     transition: 0.2s;
 }
-.rs-menu-form__burger span:nth-child(2) {
+.burger span:nth-child(2) {
     opacity: 1;
     transform: rotate(0deg) translate(0);
     transition: 0.2s;
 }
-.rs-menu-form__burger span:nth-child(3) {
+.burger span:nth-child(3) {
     transform: rotate(0deg) translate(0);
     transition: 0.2s;
 }
-.rs-menu-form__burger.active span:nth-child(1) {
+.burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px,5.5px);
     transition: 0.2s;
     background-color: var(--white);
 }
-.rs-menu-form__burger.active span:nth-child(2) {
+.burger.active span:nth-child(2) {
     opacity: 0;
     transition: 0.2s;
 }
-.rs-menu-form__burger.active span:nth-child(3) {
+.burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(3.5px,-2.5px);
     transition: 0.2s;
     background-color: var(--white);
