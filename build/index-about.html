@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <meta name="descriptin" content="Website Design по Figma">
+    <meta name="description" content="Website Design по Figma">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +16,18 @@
 
 <body>
     <div class="wrapper">
+        <h1 class="visually-hidden">Dananz web-site for verstaem.online</h1>
         <header class="header">
     <div class="logo-link">
-        <a href="./index.html">
-            <img src="./assets/img/logo.png" alt="Logo Danaz" width="126" height="54">
+        <a href="./index.html" class="logo-link">
+            <picture>
+                <source srcset="assets/img/logo.webp" type="image/webp">
+                <img src="./assets/img/logo.png" class="logo-link__img" alt="Logo Danaz header" width="126" height="54">
+            </picture>
         </a>
     </div>
     <nav class="header__nav collapse" data-toggle-id="dropdown">
-        <ul class="menu">
+        <ul class="menu reset">
             <li class="menu__item">
                 <a href="./index.html"  class="menu__link">Home</a>
             </li>
@@ -51,14 +55,19 @@
         <main class="main">
             <div class="page about">
     <section class="head-block observer-title">
-        <h1 class="title title_main" data-animated="fadeIn">
+        <h2 class="title title_main reset" data-animated="fadeIn">
             About
-        </h1>
+        </h2>
         <div class="text text_main about__text" data-animated="fadeIn">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
         </div>
-        <div class="head-block__img ">
-            <img src="assets/img/about_picture.png" class="head-block__img" alt="about picture">
+        <div class="head-block__img">
+            <picture>
+                <source type="image/webp" srcset="assets/img/about_picture_600_257.webp" media="(max-width: 412px)">
+                <source type="image/png" srcset="assets/img/about_picture_600_257.png" media="(max-width: 412px)">
+                <source srcset="assets/img/about_picture.webp" type="image/webp">
+                <img class="head-block__photo" src="assets/img/about_picture.png" alt="about picture" width="1200" height="513">
+            </picture>
         </div>
     </section>
     <section class="about-achievement">
@@ -66,38 +75,35 @@
             <div class="separator__title text-uppercase">ACHIEVEMENT</div>
             <hr class="separator__line">
         </div>
-        <h2 class="title about-achievement__title">
+        <h2 class="title about-achievement__title reset">
             interior customization with Danaanz, best quality with professional workers
         </h2>
         <div class="about-achievement__content observer-about-advantage">
             <div class="about-achievement__img">
-                <img src="assets/img/achievement.png" class="about-achievement__photo" alt="photo achievement">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/achievement_411_244.webp" media="(max-width: 412px)">
+                    <source type="image/png" srcset="assets/img/achievement_411_244.png" media="(max-width: 412px)">
+                    <source srcset="assets/img/achievement.webp" type="image/webp">
+                    <img class="about-achievement__photo" src="assets/img/achievement.png" alt="about picture" width="883" height="525">
+                </picture>
             </div>
             <div class="advantage about-achievement__advantage" data-animated="fadeInRight">
                 <div class="advantage__project">
                     <div class="about-achievement__block">
-                        <div class="advantage__total">
-                            350
-                        </div>
-                        <div class="advantage__text">
-                            Project Completed
-                        </div>
+                        <p class="advantage__total reset">350</p>
+                        <p class="advantage__text reset">Project Completed</p>
                     </div>
                     <div class="about-achievement__block">
-                        <div class="advantage__total">
-                            23
-                        </div>
-                        <div class="advantage__text">
-                            Professional Teams
-                        </div>
+                        <p class="advantage__total reset">23</p>
+                        <p class="advantage__text reset">Professional Teams</p>
                     </div>
                     <div class="about-achievement__block">
-                        <div class="advantage__total">
+                        <p class="advantage__total reset">
                             15
-                        </div>
-                        <div class="advantage__text">
+                        </p>
+                        <p class="advantage__text reset">
                             Years Experience
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -108,7 +114,7 @@
             <div class="separator__title text-uppercase" >SERVICE</div>
             <hr class="separator__line">
         </div>
-        <h2 class="title service-block__title">
+        <h2 class="title service-block__title reset">
             Why Choose Us
         </h2>
         <div class="text service-block__text">
@@ -117,7 +123,7 @@
         <div class="service-block__row " data-animated="fadeInRight" >
             <div class="service-item">
                 <div class="service-item__figure"></div>
-                <h3 class="subtitle service-item__title">
+                <h3 class="subtitle service-item__title reset">
                     High Quality
                 </h3>
                 <div class="text service-item__text">
@@ -126,7 +132,7 @@
             </div>
             <div class="service-item">
                 <div class="service-item__figure"></div>
-                <h3 class="subtitle service-item__title">
+                <h3 class="subtitle service-item__title reset">
                     Professional Designer
                 </h3>
                 <div class="text service-item__text">
@@ -135,7 +141,7 @@
             </div>
             <div class="service-item">
                 <div class="service-item__figure"></div>
-                <h3 class="subtitle service-item__title">
+                <h3 class="subtitle service-item__title reset">
                     The Best Services
                 </h3>
                 <div class="text service-item__text">
@@ -165,7 +171,10 @@
         <div class="footer-bottom__item">
             <div class="logo-link">
                 <a href="./index.html">
-                    <img src="./assets/img/logo.png" alt="Logo Danaz" width="126" height="54">
+                    <picture>
+                        <source srcset="assets/img/logo.webp" type="image/webp">
+                        <img src="./assets/img/logo.png" class="logo-link__img" alt="Logo Danaz foter" width="126" height="54">
+                    </picture>
                 </a>
             </div>
             <div class="footer__title">
@@ -184,30 +193,30 @@
             </div>
             <div class="footer-list">
                 <div class="footer-list__text">Share This on-</div>
-                <ul class="footer-list__links">
+                <ul class="footer-list__links reset">
                     <li class="footer-list__link-icon">
-                        <a href="#" class="icon">
+                        <a href="#" class="icon" aria-label="Facebook">
                             <svg class="icon__item zoom-hover">
                                 <use xlink:href="./assets/img/spriteStyle.svg#Facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-list__link-icon">
-                        <a href="#" class="icon">
+                        <a href="#" class="icon" aria-label="Instagram">
                             <svg class="icon__item zoom-hover">
                                 <use xlink:href="./assets/img/spriteStyle.svg#Instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-list__link-icon">
-                        <a href="#" class="icon">
+                        <a href="#" class="icon" aria-label="Tiktok">
                             <svg class="icon__item zoom-hover">
                                 <use xlink:href="./assets/img/spriteStyle.svg#Tiktok"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-list__link-icon">
-                        <a href="#" class="icon">
+                        <a href="#" class="icon" aria-label="Youtube">
                             <svg class="icon__item zoom-hover">
                                 <use xlink:href="./assets/img/spriteStyle.svg#Youtube"></use>
                             </svg>

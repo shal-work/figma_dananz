@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    // margin: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+    // padding: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
     box-sizing: border-box;
 }
 *, ::after, ::before {
@@ -27,6 +27,7 @@ a, a:link, a:visited {
 body {
     overflow-y: scroll;
     overflow-x: hidden;
+    margin: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
 }
 
 ::-webkit-scrollbar {
@@ -37,4 +38,8 @@ body {
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #272a3466;
+}
+.reset {
+    margin: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+    padding: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
 }

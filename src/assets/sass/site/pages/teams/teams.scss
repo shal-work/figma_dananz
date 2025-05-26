@@ -5,7 +5,7 @@
         @media (min-width:1440px) {
             margin-bottom: 100px;
         }
-        @media (max-width: 356px) {
+        @media (max-width: 412px) {
             margin-bottom: 30px;
         }
     }
@@ -36,17 +36,27 @@
             justify-content: flex-start;
             height: 410px;
         }
-        @media (max-width: 356px) {
-            height: calc(100vw/356 * 400 + 70px);
+        @media (max-width: 412px) {
+            height: calc(100vw/412 * 400 + 70px);
         }
     }
     &__person {
         background-color: var(--primary-blue100);
         position: relative;
         height: 386px;
-        @media (max-width: 356px) {
-            height: calc(100vw/356 * 386);
-            width: calc(100vw/356 * 282);
+        @media (max-width: 412px) {
+            width: calc(100vw/412 * 282);
+            height: calc(100vw/412 * 379);
+            max-width: 200px;
+            max-height: 300px;
+        }
+    }
+    &__img {
+        width: auto;
+        height: auto;
+        @media (max-width: 412px) {
+            height: 100%;
+            width: auto;
         }
     }
     &__description {
@@ -56,9 +66,9 @@
         position: absolute;
         bottom: 0px;
         width: 91%;
-        @media (max-width: 356px) {
+        @media (max-width: 412px) {
             margin: 5px;
-            padding: calc(100vw/356 * 18);
+            padding: calc(100vw/412 * 18);
             position: static;
             width: 97%;
             box-shadow: 0 0 10px 0px var(--primary-blue10);
@@ -69,7 +79,7 @@
         line-height: 34px;
         font-weight: 600;
         color: var(--grayscale50);
-        @media (max-width: 356px) {
+        @media (max-width: 412px) {
             font-size: 12px;
             line-height: 12px;
             font-weight: 400;
@@ -79,17 +89,13 @@
         font-size: 16px;
         line-height: 26px;
         font-weight: 400;
-        color: var(--grayscale10);
-        @media (max-width: 356px) {
+        // color: var(--grayscale10);
+         color: var(--grayscale10_contrast);
+        @media (max-width: 412px) {
             font-size: 12px;
             line-height: 12px;
             font-weight: 400;
         }
     }
-    &__img {
-        @media (max-width: 356px) {
-            height: calc(100vw/356 * 386);
-            width: calc(100vw/356 * 282);
-        }
-    }
+
 }

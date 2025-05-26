@@ -6,18 +6,24 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        gap: 60px;
+        // gap: 60px;
         @media (max-width: 767px) {
             gap: calc(var(--vw) * 60);
         }
     }
     &__img {
-        width: 75%;
+        // width: 75%;
         // max-width: 883px;
+        // width: 75%;
+        // height: 100%;
+        flex: 1 1 auto;
+        margin-right: min(60px, max(var(--vw) * 60, 26px));
     }
     &__photo {
         width: 100%;
-        height: 100%;
+        height: auto;
+        vertical-align: middle;
+        object-fit: cover;
     }
     &__title {
         margin-bottom: calc(var(--vw) * 56);
@@ -26,8 +32,8 @@
         }
     }
     &__advantage {
-        width: 22.5%;
-        width: 25%;
+        // width: 22.5%;
+        // width: 25%;
         max-width: 252px;
     }
     &__block {

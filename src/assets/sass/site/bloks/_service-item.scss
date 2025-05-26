@@ -23,7 +23,8 @@
         }
     }
     &__text {
-        color: var(--grayscale10);
+        // color: var(--grayscale10);
+        color: var(--grayscale10_contrast);
         text-align: center;
     }
 }

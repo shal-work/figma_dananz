@@ -2,9 +2,9 @@
     <section class="home-design observer-home-advantage observer-title">
         <hr class="hr-line">
         <div class="home-design__block" >
-            <h1 class="home-design__title" data-animated="fadeIn">
+            <h2 class="home-design__title reset" data-animated="fadeIn">
                 Design your<br>interor with high<br>quality.
-            </h1>
+            </h2>
             <div class="home-design__text">
                 2022 <br> ALL RIGHT RESERVED
             </div>
@@ -39,7 +39,14 @@
         </div>
 
         <div class="home-design__img">
-            <img src="assets/img/photo_design.png" class="home-design__img" alt="photo_design">
+            <picture>
+                <source type="image/webp" srcset="assets/img/photo_design_600_257.webp" media="(max-width: 412px)">
+                <source type="image/png" srcset="assets/img/photo_design_600_257.png" media="(max-width: 412px)">
+                <source type="image/webp" srcset="assets/img/photo_design.webp" media="(max-width: 1440px)">
+                <source type="image/png" srcset="assets/img/photo_design.png" media="(max-width: 1440px)">
+                <source srcset="assets/img/photo_design_1680_718.webp" type="image/webp">
+                <img src="assets/img/photo_design_1680_718.png" class="home-design__photo" alt="photo_design" width="1680" height="718">
+            </picture>
         </div>
     </section>
     <section class="home-about">
@@ -47,15 +54,23 @@
             <div class="separator__title text-uppercase">ABOUT</div>
             <hr class="separator__line">
         </div>
-        <h2 class="title home-about__title">
+        <h2 class="title home-about__title reset reset">
             “We're one of the best furniture agency. Prioritizing customers and making purchases easy are the hallmarks of our agency.”
         </h2>
         <div class="portofolio-leiba">
             <div class="portofolio-leiba__img observer-leiba">
-                <img src="assets/img/photo_about.png" class="portofolio-leiba__photo" alt="photo_about">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/photo_about_600_357.webp" media="(max-width: 412px)">
+                    <source type="image/png" srcset="assets/img/photo_about_600_357.png" media="(max-width: 412px)">
+                    <source srcset="assets/img/photo_about.webp" type="image/webp">
+                    <img src="assets/img/photo_about.png" class="portofolio-leiba__photo" alt="photo_about" width="1200" height="513">
+                </picture>
                 <div class="leiba" data-animated="fadeInRight">
                     <div class="leiba__round">
-                        <img src="assets/img/Arga_Danaan.png" class="leiba__photo" alt="Arga_Danaan">
+                        <picture>
+                            <source srcset="assets/img/Arga_Danaan_51.webp" type="image/webp">
+                            <img src="assets/img/Arga_Danaan_51.png" class="leiba__photo" alt="Arga_Danaan" width="51" height="51">
+                        </picture>                        
                     </div>
                     <div class="leiba__text">
                         <div class="leiba__name">Arga Danaan</div>
@@ -67,7 +82,7 @@
                 <div class="text portofolio-leiba__text">
                     Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
                 </div>
-                <a href="index-portofolio.html" class="btn btn-primary text-nobreak portofolio-leiba__btn">Learn More</a>
+                <a href="index-portofolio.html" class="btn btn-primary text-nobreak portofolio-leiba__btn">Portofolio</a>
             </div>
         </div>
     </section>
@@ -77,28 +92,35 @@
                 <div class="separator__title text-uppercase">SERVICE</div>
                 <hr class="separator__line">
             </div>
-            <h2 class="title home-servise__title text-lowercase">
+            <h2 class="title home-servise__title text-lowercase reset">
                 attractive furniture with the best quality.
             </h2>
             <div class="text home-servise__text">
                 Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
             </div>
             <div class="home-servise__list">
-                <ul class="list">
+                <ul class="list reset">
                     <li class="list__item">Interior Design
-                        <a href="#" class="list__link"></a>
+                        <a href="#" class="list__link" aria-label="Interior Design"></a>
                     </li>
                     <li class="list__item">Consultant
-                        <a href="#" class="list__link"></a>
+                        <a href="#" class="list__link" aria-label="Consultant"></a>
                     </li>
                     <li class="list__item">Construction Consultant
-                        <a href="#" class="list__link"></a>
+                        <a href="#" class="list__link" aria-label="Construction Consultant"></a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="home-servise__img">
-            <img src="assets/img/photo_service.png" class="home-servise__photo" alt="photo_service">
+            <picture>
+                <source type="image/webp" srcset="assets/img/photo_service_600_293.webp" media="(max-width: 412px)">
+                <source type="image/png" srcset="assets/img/photo_service_600_293.png" media="(max-width: 412px)">
+                <source type="image/webp" srcset="assets/img/photo_service.webp" media="(max-width: 1440px)">
+                <source type="image/png" srcset="assets/img/photo_service.png" media="(max-width: 1440px)">
+                <source srcset="assets/img/photo_service_1680_820.webp" type="image/webp">
+                <img src="assets/img/photo_service_1680_820.png" class="home-servise__photo" alt="photo_service" width="1680" height="820">
+            </picture> 
         </div>
     </section>
     <section class="product-block observer-list">
@@ -107,25 +129,25 @@
             <hr class="separator__line">
         </div>
         <div class="product-block__row">
-            <h2 class="title product-block__title">Choose your product themes.</h2>
+            <h2 class="title product-block__title reset">Choose your product themes.</h2>
             <div class="text product-block__text">Find the theme you want. If our choice of theme is not what you want, you can customize it as you want.</div>
         </div>
         <div class="product-block__list observer-list">
-            <ul class="list" data-animated="fadeInRight">
+            <ul class="list reset" data-animated="fadeInRight">
                 <li class="list__item" >Vintage
-                    <a href="#" class="list__link" ></a>
+                    <a href="#" class="list__link" aria-label="Vintage"></a>
                     <div class="text list__text"  >the use of simple and limited elements to get the best effect or impression.</div>
                 </li>
                 <li class="list__item">Minimalist
-                    <a href="#" class="list__link"></a>
+                    <a href="#" class="list__link" aria-label="Minimalist"></a>
                     <div class="text list__text">the use of simple and limited elements to get the best effect or impression.</div>
                 </li>
                 <li class="list__item">Modern
-                    <a href="#" class="list__link"></a>
+                    <a href="#" class="list__link" aria-label="Modern"></a>
                     <div class="text list__text">the use of simple and limited elements to get the best effect or impression.</div>
                 </li>
                 <li class="list__item">transitional
-                    <a href="#" class="list__link"></a>
+                    <a href="#" class="list__link" aria-label="transitional"></a>
                     <div class="text list__text">the use of simple and limited elements to get the best effect or impression.</div>
                 </li>
             </ul>
@@ -138,21 +160,34 @@
                 <hr class="separator__line">
             </div>
 
-            <h2 class="title home-material__title text-lowercase">choice of materials for quality furniture.</h2>
+            <h2 class="title home-material__title text-lowercase reset">choice of materials for quality furniture.</h2>
             <div class="text home-material__text">
                 You can custom the material as desired. And our furniture uses the best materials and selected quality materials.
             </div>
             <div class="btn btn-white text-nobreak home-material__btn">See Materials</div>
         </div>
-        <div class="home-material__imgs observer-img1">
+        <div class="home-material__imgs observer-img">
             <div class="home-material__photo-main" data-animated = "zoomIn">
-                <img src="assets/img/board.png" class="home-material__photo" alt="the board">
+                <picture>
+                    <source srcset="assets/img/board.webp" type="image/webp">
+                    <img src="assets/img/board.png" class="home-material__photo" alt="the board" width="342" height="392">
+                </picture>                 
             </div>
             <div class="home-material__photo-over" data-animated = "zoomIn">
-                <img src="assets/img/epoxy_resin.png" class="home-material__photo" alt="epoxy resin">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/epoxy_resin_186_173.webp" media="(max-width: 412px)">
+                    <source type="image/png" srcset="assets/img/epoxy_resin_186_173.png" media="(max-width: 412px)">
+                    <source srcset="assets/img/epoxy_resin.webp" type="image/webp">
+                    <img src="assets/img/epoxy_resin.png" class="home-material__photo" alt="epoxy resin1" width="242" height="225">
+                </picture>  
             </div>
             <div class="home-material__photo-under" data-animated = "zoomIn">
-                <img src="assets/img/pebbles.png" class="home-material__photo" alt="pebbles">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/pebbles_186_169.webp" media="(max-width: 412px)">
+                    <source type="image/png" srcset="assets/img/pebbles_186_169.png" media="(max-width: 412px)">
+                    <source srcset="assets/img/pebbles.webp" type="image/webp">
+                    <img src="assets/img/pebbles.png" class="home-material__photo" alt="pebbles" width="196" height="178">
+                </picture>  
             </div>
         </div>
     </section>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <meta name="descriptin" content="Website Design по Figma">
+    <meta name="description" content="Website Design по Figma">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +16,18 @@
 
 <body>
     <div class="wrapper">
+        <h1 class="visually-hidden">Dananz web-site for verstaem.online</h1>
         <header class="header">
     <div class="logo-link">
-        <a href="./index.html">
-            <img src="./assets/img/logo.png" alt="Logo Danaz" width="126" height="54">
+        <a href="./index.html" class="logo-link">
+            <picture>
+                <source srcset="assets/img/logo.webp" type="image/webp">
+                <img src="./assets/img/logo.png" class="logo-link__img" alt="Logo Danaz header" width="126" height="54">
+            </picture>
         </a>
     </div>
     <nav class="header__nav collapse" data-toggle-id="dropdown">
-        <ul class="menu">
+        <ul class="menu reset">
             <li class="menu__item">
                 <a href="./index.html"  class="menu__link">Home</a>
             </li>
@@ -51,12 +55,17 @@
         <main class="main">
             <div class="page services">
     <section class="head-block observer-title">
-        <h1 class="title title_main" data-animated="fadeIn">Services</h1>
+        <h2 class="title title_main reset" data-animated="fadeIn">Services</h2>
         <div class="text text_main" data-animated="fadeIn">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
         </div>
         <div class="head-block__img">
-            <img src="assets/img/services_picture.png" class="head-block__img" alt="services picture">
+            <picture>
+                <source type="image/webp" srcset="assets/img/services_picture_600_257.webp" media="(max-width: 412px)">
+                <source type="image/png" srcset="assets/img/services_picture_600_257.png" media="(max-width: 412px)">
+                <source srcset="assets/img/services_picture.webp" type="image/webp">
+                <img src="assets/img/services_picture.png" class="head-block__img" alt="services picture" width="1200" height="513">
+            </picture>  
         </div>
     </section>
     <div class="separator services__separator">
@@ -67,12 +76,17 @@
 
         <div class="services__item observer-servise1">
             <div class="services__img">
-                <img src="assets/img/achievement_1.png" class="services__photo" alt="achievement_1">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/achievement_1_600_294.webp" media="(max-width: 412px)">
+                    <source type="image/png" srcset="assets/img/achievement_1_600_294.png" media="(max-width: 412px)">
+                    <source srcset="assets/img/achievement_1.webp" type="image/webp">
+                    <img src="assets/img/achievement_1.png" class="services__photo" alt="achievement_1" width="746" height="365">
+                </picture>  
             </div>
             <div class="services__block" data-animated="fadeInRight">
-                <h3 class="title services__title">
+                <h2 class="title services__title reset">
                     Interior design
-                </h3>
+                </h2>
                 <div class="text services__text">
                     Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
                 </div>
@@ -80,26 +94,36 @@
         </div>
         <div class="services__item observer-servise2">
             <div class="services__img">
-                <img src="assets/img/achievement_2.png" class="services__photo" alt="achievement_2">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/achievement_2_600_294.webp" media="(max-width: 412px)">
+                    <source type="image/png" srcset="assets/img/achievement_2_600_294.png" media="(max-width: 412px)">
+                    <source srcset="assets/img/achievement_2.webp" type="image/webp">
+                    <img src="assets/img/achievement_2.png" class="services__photo" alt="achievement_2" width="746" height="365">
+                </picture>                  
             </div>
 
             <div class="services__block" data-animated="fadeInRight">
-                <h3 class="title services__title">
+                <h2 class="title services__title reset">
                     Consultant
-                </h3>
-                <div class="text services__text" >
+                </h2>
+                <div class="text services__text">
                     Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
                 </div>
             </div>
         </div>
         <div class="services__item observer-servise3">
             <div class="services__img">
-                <img src="assets/img/achievement_3.png" class="services__photo" alt="achievement_3">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/achievement_3_600_294.webp" media="(max-width: 412px)">
+                    <source type="image/png" srcset="assets/img/achievement_3_600_294.png" media="(max-width: 412px)">
+                    <source srcset="assets/img/achievement_3.webp" type="image/webp">
+                    <img src="assets/img/achievement_3.png" class="services__photo" alt="achievement_3" width="746" height="365">
+                </picture>
             </div>
             <div class="services__block" data-animated="fadeInRight">
-                <h3 class="title services__title">
+                <h2 class="title services__title reset">
                     construction consultant
-                </h3>
+                </h2>
                 <div class="text services__text" >
                     Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
                 </div>
@@ -116,21 +140,21 @@
             <div class="text product-block__text">Find the theme you want. If our choice of theme is not what you want, you can customize it as you want.</div>
         </div>
         <div class="product-block__list" data-animated="fadeInRight">
-            <ul class="list">
+            <ul class="list reset">
                 <li class="list__item">Vintage
-                    <a href="#" class="list__link"></a>
+                    <a href="#" class="list__link" aria-label="Vintage"></a>
                     <div class="text list__text">the use of simple and limited elements to get the best effect or impression.</div>
                 </li>
                 <li class="list__item">Minimalist
-                    <a href="#" class="list__link"></a>
+                    <a href="#" class="list__link" aria-label="Minimalist"></a>
                     <div class="text list__text">the use of simple and limited elements to get the best effect or impression.</div>
                 </li>
                 <li class="list__item">Modern
-                    <a href="#" class="list__link"></a>
+                    <a href="#" class="list__link" aria-label="Modern"></a>
                     <div class="text list__text">the use of simple and limited elements to get the best effect or impression.</div>
                 </li>
-                <li class="list__item">transitional
-                    <a href="#" class="list__link"></a>
+                <li class="list__item">Transitional
+                    <a href="#" class="list__link" aria-label="Transitional"></a>
                     <div class="text list__text">the use of simple and limited elements to get the best effect or impression.</div>
                 </li>
             </ul>
@@ -157,7 +181,10 @@
         <div class="footer-bottom__item">
             <div class="logo-link">
                 <a href="./index.html">
-                    <img src="./assets/img/logo.png" alt="Logo Danaz" width="126" height="54">
+                    <picture>
+                        <source srcset="assets/img/logo.webp" type="image/webp">
+                        <img src="./assets/img/logo.png" class="logo-link__img" alt="Logo Danaz foter" width="126" height="54">
+                    </picture>
                 </a>
             </div>
             <div class="footer__title">
@@ -176,30 +203,30 @@
             </div>
             <div class="footer-list">
                 <div class="footer-list__text">Share This on-</div>
-                <ul class="footer-list__links">
+                <ul class="footer-list__links reset">
                     <li class="footer-list__link-icon">
-                        <a href="#" class="icon">
+                        <a href="#" class="icon" aria-label="Facebook">
                             <svg class="icon__item zoom-hover">
                                 <use xlink:href="./assets/img/spriteStyle.svg#Facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-list__link-icon">
-                        <a href="#" class="icon">
+                        <a href="#" class="icon" aria-label="Instagram">
                             <svg class="icon__item zoom-hover">
                                 <use xlink:href="./assets/img/spriteStyle.svg#Instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-list__link-icon">
-                        <a href="#" class="icon">
+                        <a href="#" class="icon" aria-label="Tiktok">
                             <svg class="icon__item zoom-hover">
                                 <use xlink:href="./assets/img/spriteStyle.svg#Tiktok"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-list__link-icon">
-                        <a href="#" class="icon">
+                        <a href="#" class="icon" aria-label="Youtube">
                             <svg class="icon__item zoom-hover">
                                 <use xlink:href="./assets/img/spriteStyle.svg#Youtube"></use>
                             </svg>

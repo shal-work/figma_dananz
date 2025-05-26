@@ -86,7 +86,8 @@
     &__text {
         max-width: 492px;
         width: 100%;
-        color: var(--grayscale10);
+        // color: var(--grayscale10);
+        color: var(--grayscale10_contrast);
         margin-bottom: 40px;
     }
     &__row {
@@ -97,4 +98,17 @@
             grid-template-columns: repeat(1, 1fr);
         }
     }
+}
+
+// прячем заголовок h1 
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
 }
